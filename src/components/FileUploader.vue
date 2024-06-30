@@ -100,7 +100,7 @@ const uploadFiles = async () => {
       project_structure: JSON.stringify(projectStructure)
     };
 
-    const response = await axios.post('http://127.0.0.1:8000/upload-to-github/', data, {
+    const response = await axios.post('https://remote-commit-backend.vercel.app/upload-to-github', data, {
       headers: {
         'Content-Type': 'application/json'
       },
